@@ -18,13 +18,23 @@ body {
     height: 100px;
     background-color: red;
 }
-
+.debug .shop .col{
+    /* width: 450px; */
+    height: 650px;
+    background-color: #e7e7e7;
+}
 /* --- TYPHO --- */
 
 body{
     font-family: 'Roboto', sans-serif;
 }
+.red{
+    color: red;
+}
 
+.barred{
+    text-decoration: line-through;
+}
 /* --- COMMON --- */
 
 .container{
@@ -32,6 +42,7 @@ body{
 }
 .row{
     display: flex;
+    flex-wrap: wrap;
 }
 
 /* --- HEADER --- */
@@ -41,6 +52,7 @@ body{
     top: 0;
     left: 0;
     right: 0;
+    z-index: 100;
     background-color: #FF6900;
     padding: 18px;
     color: white;
@@ -49,13 +61,12 @@ body{
     align-items: center;
     margin: auto;
 }
-
 .words{
     width: 20%;
 }
 .icons{
     width: 20%;
-    text-align: right;
+    text-align: right; 
 }
 .logo{
     width: 60%;
@@ -66,4 +77,62 @@ body{
 }
 
 /* --- MAIN --- */
+.shop{
+    padding-top: 120px;
+}
+.shop .container{
+    margin: auto;
+}
+.col{
+    position: relative;
+    width: calc(30% - 5px);
+    margin: 10px;
+} 
+.col img{
+    max-width: 100%;
+}
+.sconto{
+    position: absolute;
+    background-color: red;
+    color: white;
+    bottom: 80px;
+    padding: 0 10px;
+}
+.sostenibilità{
+    position: absolute;
+    background-color: green;
+    color: white;
+    bottom: 80px;
+    left: 50px;
+    padding: 0 10px;
+}
+.heart{
+    position: absolute;
+    background-color: white;
+    top: 10px;
+    left: calc(100% - 26px);
+    padding: 3px 5px;
+}
+.sostenibilità2{
+    position: absolute;
+    background-color: green;
+    color: white;
+    bottom: 80px;
+    padding: 0 10px;
+}
+.col:hover .heart{
+    color: red;
+}
+.top{
+    display: block;
+} 
+.bottom {
+    display: none;
+}
+.article:hover .bottom{
+    display: block;
+}
+.article:hover .top{
+    display: none;
+}
 /* --- FOOTER --- */
