@@ -35,10 +35,12 @@ body{
 .barred{
     text-decoration: line-through;
 }
+
 /* --- COMMON --- */
 
 .container{
     max-width: 1200px;
+    margin: auto;
 }
 .row{
     display: flex;
@@ -80,6 +82,7 @@ body{
 }
 
 /* --- MAIN --- */
+
 .shop{
     padding-top: 120px;
 }
@@ -88,8 +91,8 @@ body{
 }
 .col{
     position: relative;
-    width: calc(30% - 5px);
-    margin: 10px;
+    width: 30%;
+    margin: 20px;
 } 
 .col img{
     max-width: 100%;
@@ -138,4 +141,29 @@ body{
 .article:hover .top{
     display: none;
 }
+
 /* --- FOOTER --- */
+
+.footer{
+    background-color: black;
+    color: white;
+    margin: auto;
+}
+.info-legali{
+    width: 50%;
+}
+.social-box{
+    width: 50%;
+    text-align: right;
+    padding-bottom: 10px;
+}
+.footer .row{
+    justify-content: space-between;
+}
+.social{
+    display: inline-block;
+    padding: 0 2px;
+}
+.title{
+    margin: 10px 0;
+}
