@@ -2,5 +2,68 @@ body {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+}
+
+/* --- DEBUG --- */
+
+.debug{
+    background-color: rgb(172, 248, 248);
+}
+
+.debug .head-col-small{
+    height: 100px;
+    background-color: yellow;
+}
+.debug .logo{
+    height: 100px;
+    background-color: red;
+}
+
+/* --- TYPHO --- */
+
+body{
     font-family: 'Roboto', sans-serif;
 }
+
+/* --- COMMON --- */
+
+.container{
+    max-width: 1200px;
+}
+.row{
+    display: flex;
+}
+
+/* --- HEADER --- */
+
+.nav-fix{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #FF6900;
+    padding: 18px;
+    color: white;
+}
+.nav-fix .row{
+    align-items: center;
+    margin: auto;
+}
+
+.words{
+    width: 20%;
+}
+.icons{
+    width: 20%;
+    text-align: right;
+}
+.logo{
+    width: 60%;
+    text-align: center;
+}
+.logo img{
+    width: 20%;
+}
+
+/* --- MAIN --- */
+/* --- FOOTER --- */
